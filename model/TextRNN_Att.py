@@ -87,7 +87,8 @@ class Model(nn.Module):
 # [batch_size, seq_len, embed_size]
 #
 # 3.双向LSTM：隐层大小为hidden_size，得到所有时刻的隐层状态
-# (前向隐层和后向隐层拼接) [batch_size, seq_len, hidden_size * 2]
+# (前向隐层和后向隐层拼接) 
+# [batch_size, seq_len, hidden_size * 2]
 #
 # 4.初始化一个可学习的权重矩阵w
 # w=[hidden_size * 2, 1]
